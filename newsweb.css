@@ -1,0 +1,124 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    top: 0;
+    background-color: aquamarine;
+}
+a{
+    text-decoration: none;
+}
+header{
+   /* border: 1px black solid;  */
+   display: flex;
+   justify-content: space-around;
+   height: 6vh;
+   align-items: center;
+   background-image: linear-gradient(to right, rgb(73, 23, 23) , rgb(138, 150, 204));
+}
+
+
+#logo{
+    font-weight: bolder;
+    font-family: sans-serif;
+    animation: logoanimate 4s ease-in-out infinite 10ms;
+    transition: all 10ms;
+    cursor: pointer;
+}
+@keyframes logoanimate{
+    0%{color: brown;
+        font-size: 20px;
+    }
+    25%{
+        color: #81ecec;
+        font-size: 22.5px;
+    }
+    50%{
+        color: #d63031;
+        font-size: 25px;
+    }
+    75%{
+        color: rgb(243, 243, 243);
+        font-size: 27.5px;
+    }
+    100%{color: brown;
+        font-size: 20px;
+    }
+}
+#searchbox{
+    /* border: 1px black solid; */
+    height: 70%;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#searchinput{
+    height: 80%;
+    background-color: bisque;
+    border-radius: 14px;
+    border: 1px #e8dada solid;
+}
+#searchinput:focus{
+    outline: none;
+    text-indent: 11px;
+    border-style: groove;
+}
+#searchbutton{
+    height: 100%;
+    width: 19%;
+    background-color: blanchedalmond;
+    border-color: navajowhite;
+    border-radius: 12px;
+    color: #303952;
+    font-size: 18px;
+    font-family: ui-serif;
+    font-weight: bolder;
+    margin-left: 1%;
+}
+#searchbutton:focus{
+    outline: none;
+
+}
+#searchbutton:active{
+    border-style: revert;
+}
+.container{
+    height: auto;
+    background-color: #dcdde1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article{
+    border: 1px black solid;
+    width: 74vw;
+   
+}
+.title{
+    border: 0.5px blue solid;
+    height: 4vw;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-size: larger;
+    font-family: inherit;
+    color: chocolate;
+    cursor: pointer;
+}
+.content{
+    
+    text-align: center;
+    height: 2vw;
+    border: 1px black solid;
+    /* visibility: hidden; */
+    display: none;
+}
+footer{
+    background-color: burlywood;
+    text-align: end;
+
+}
